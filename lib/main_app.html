@@ -1,0 +1,22 @@
+<!--
+  Copyright (c) 2016, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<dom-module id="main-app">
+  <style>
+    :host {
+      display: block;
+    }
+  </style>
+
+  <template>
+    <p>
+      <paper-input label="Type a number..." value="{{text}}"></paper-input>
+      <paper-button id="isolate_run" class="indigo" >Isolate</paper-button>
+      <paper-button id="local_run" class="indigo" >Main</paper-button>
+      <div id="output"></div>
+      <paper-spinner active></paper-spinner>
+    </p>
+  </template>
+</dom-module>
