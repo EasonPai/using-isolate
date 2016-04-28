@@ -1,14 +1,14 @@
 // Copyright (c) 2016, <your name>. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 @HtmlImport('main_app.html')
-library pure_isolate.lib.main_app;		
+library using_isolate.lib.main_app;
 
 import 'dart:html';
 
 import 'package:polymer/polymer.dart';
 import 'package:polymer_elements/paper_input.dart';
 import 'package:polymer_elements/paper_button.dart';
-import 'package:polymer_elements/paper_spinner.dart';
+import 'package:polymer_elements/paper_progress.dart';
 import 'package:web_components/web_components.dart';
 import 'dart:isolate';
 import 'dart:async';
@@ -38,7 +38,7 @@ class MainApp extends PolymerElement {
 
     outputView = $['output'];
 
-    text = "20";
+    text = "40";
     set("text", text);
   }
 
@@ -72,7 +72,6 @@ class MainApp extends PolymerElement {
 
 
   int fibonacci(int n) {
-//    print("[fibonacci] n = $n");
     if (n == 0) return 0;
     if (n == 1) return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);

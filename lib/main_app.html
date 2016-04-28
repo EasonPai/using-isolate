@@ -8,15 +8,20 @@
     :host {
       display: block;
     }
+    paper-button {
+      background-color: var(--paper-indigo-400);
+      color: white;
+    }
   </style>
 
   <template>
     <p>
+      Fibonacci Calculator <paper-progress indeterminate></paper-progress>
       <paper-input label="Type a number..." value="{{text}}"></paper-input>
-      <paper-button id="isolate_run" class="indigo" >Isolate</paper-button>
-      <paper-button id="local_run" class="indigo" >Main</paper-button>
+      Run with
+      <paper-button id="isolate_run" >Multi-thread</paper-button>
+      <paper-button id="local_run" >Main Thread</paper-button>
       <div id="output"></div>
-      <paper-spinner active></paper-spinner>
     </p>
   </template>
 </dom-module>

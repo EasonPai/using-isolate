@@ -1,4 +1,4 @@
-library pure_isolate.lib.remote_isolate;
+library using_isolate.lib.remote_isolate;
 
 import 'dart:isolate';
 import 'dart:convert';

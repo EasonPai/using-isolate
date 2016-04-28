@@ -1,7 +1,7 @@
 // Copyright (c) 2016, <your name>. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
-import 'package:pure_isolate/main_app.dart';
+import 'package:using_isolate/main_app.dart';
 import 'package:polymer/polymer.dart';
 
 /// [MainApp] used!
