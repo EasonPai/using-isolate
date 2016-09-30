@@ -1,4 +1,4 @@
 # using-isolate
-a practice on client side of dart isolate
+a basic implementation of dart:isolate in web app
 
-see [demo](https://easonpai.github.io/using-isolate/)
+check the [demo](https://easonpai.github.io/using-isolate/)
